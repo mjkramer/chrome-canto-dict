@@ -1,0 +1,27 @@
+{
+   "background": {
+      "scripts": [ "data.js", "cperapera.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/toolbar-disabled.png",
+      "default_title": "Cantonese Popup Dictionary"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "cperacontent.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "Cantonese-English pop-up dictionary for Chrome",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqjx1fc7OEMO8kO5urDKvof4USblktsoqy13ZXziI93BPY9W8DmeW8kzTI5F7DVV52hl881uqoyV8gTK6gN69yK8iD1G9ULUyEyY/z3S/PYM09PcWiUuG+YzBZLkUThh7x/CNo9OaCxdznvV6NlGA2ZfQB/v3gNiXYDJte2LEULloT1ISLSRboqZi+FHgLCf8KOwSxYxy1AQmTLOUU9xleU59BwEKb2/cYK5+gOV9PGCmaF6oeLbUGuRG96XqdcPzDdN1i4oRvZ6tNfmhNUDkIz741WqRffEIaa+pVkgmmaRa66YZqP1dqrBb57PvU04I0XIJ/Hr/j2jZzu7En1nkQwIDAQAB",
+   "manifest_version": 2,
+   "name": "Cantonese Popup Dictionary",
+   "permissions": [ "tabs", "http://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.3",
+   "web_accessible_resources": [ "css/*", "cperacontent.js", "images/*" ]
+}
